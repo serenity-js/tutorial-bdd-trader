@@ -4,6 +4,7 @@ import { ViewNews } from '../../test/tasks';
 import { expect } from '../../test/expect'
 import { LastResponseData } from '../../test/questions';
 import { every } from '../../test/assertions';
+import { NewsItem } from '../../api';
 
 export = function() {
 
@@ -23,7 +24,7 @@ export = function() {
         return this.stage.theActorInTheSpotlight().attemptsTo(
             See.if(
                 LastResponseData(),
-                every(record => expect(record.related, record.headline).to.have.string(tickerSymbol))
+                every<NewsItem>(record => expect(record.related, record.headline).to.have.string(tickerSymbol))
             ),
         );
     });
