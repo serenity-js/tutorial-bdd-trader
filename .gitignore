@@ -1,0 +1,13 @@
+# IntelliJ
+.idea
+*.iml
+
+# Node
+node_modules
+
+# Build Artifacts
+_book
+.nyc_output
+target/
+*.log
+packages/*/CHANGELOG.md

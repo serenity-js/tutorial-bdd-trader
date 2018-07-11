@@ -1,0 +1,17 @@
+{
+    "cucumberautocomplete.steps": [
+        "features/step_definitions/*.ts"
+    ],
+    "cucumberautocomplete.syncfeatures": "features/*feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true,
+    "cucumberautocomplete.skipDocStringsFormat": true,
+    "cucumberautocomplete.onTypeFormat": true,
+    "editor.quickSuggestions": {
+        "comments": false,
+        "strings": true,
+        "other": true
+    }
+}
+
